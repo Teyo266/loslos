@@ -1,0 +1,14 @@
+{
+  "name": "angel",
+  "version": "1.0.0",
+  "description": "~ La lumière du Paradis iluminera votre monde Discord. Je ferais tout ce qui est en mon pouvoir pour vous protéger ! Je suis votre Ange Gardien. ~",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Teyo's#0525",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
