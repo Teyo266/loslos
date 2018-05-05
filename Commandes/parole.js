@@ -21,8 +21,8 @@ client.on("message", message => {
   const command = args.shift().toLowerCase(); 
 ;
 if(command === "speak") {
-  if(!message.member.roles.some(r=>["💻 Admin Discord", "👮🏼  Modo Discord", "📱 Admin Truckers MP"].includes(r.name)) )
-  return message.reply("You don't have the permission");
+  if(!message.member.hasPermission("ADMINISTRATOR"))
+  return message.reply("Tu n'as pas les permsisions");
   const parole = args.join(" ");
   message.delete();
    message.channel.send(parole)

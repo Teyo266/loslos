@@ -13,6 +13,7 @@ const client = new Discord.Client();
 const config = require ("./Commandes/config.json");
 
 /* =Commandes= */
+const parole = require ("./Commandes/parole.js")
 
 /* =Async Fonction= */
 client.on("message", message => {
@@ -41,7 +42,7 @@ client.on("ready", () => {
 client.on("guildMemberAdd", member => {
   let mem = member.guild
   const embed = new Discord.RichEmbed()
-.setAuthor("TheLife  ~ Nouvel Utilisateur !")
+.setAuthor(" ~ Nouvel Utilisateur !")
 
 .setColor(0x00ff00)
 .setDescription(member.user + " vient de nous rejoindre ! 💻")
@@ -53,7 +54,7 @@ client.channels.get("442403150507409409").send({embed});
 client.on("guildMemberRemove", member => {
 let mem = member.guild
 const embed = new Discord.RichEmbed()
-.setAuthor("TheLife  ~ Ancien Utilisateur")
+.setAuthor(" ~ Ancien Utilisateur")
 
 .setColor(0xff0000)
 .setDescription(member.user + " vient de nous quitter ! 💻")
