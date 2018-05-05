@@ -13,7 +13,10 @@ const client = new Discord.Client();
 const config = require ("./Commandes/config.json");
 
 /* =Commandes= */
-const parole = require ("./Commandes/parole.js")
+const parole = require ("./Commandes/Cmd=Speak.js");
+// const kick = require ("./Commandes/Cmd=Kick.js");
+// const ban = require ("./Commandes/Cmd=Ban.js");
+const ping = require ("./Commandes/Cmd=Ping.js")
 
 /* =Async Fonction= */
 client.on("message", message => {
@@ -26,11 +29,10 @@ client.on("message", message => {
 /* =Démarrage Système= */
 client.on("ready", () => {
   client.user.setStatus(`dnd`)
-  client.user.setGame("chercher un nom de serveur");
+  client.user.setGame(".exe");
   console.log(`
   =======================================
-   Démarrage des Systèmes en cours ...   
-   [Système opérationnel]             
+  Dev Bot !          
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       ${client.users.size} Utilisateurs  
       ${client.guilds.size}  Serveurs    
