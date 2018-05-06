@@ -66,7 +66,7 @@ client.channels.get("442403150507409409").send({embed});
 
 
 client.on("guildMemberAdd", member => {
-  var role = member.guild.roles.find('name', 'Membres');
+  var role = member.guild.roles.get("442404826438172683")
   member.addRole(role)
 });
 

@@ -27,6 +27,15 @@ if(command === "speak") {
   const parole = args.join(" ");
   message.delete();
    message.channel.send(parole)
+   console.log(`=> Commande Speak utilisé !
+          ► ${message.author.tag} | ${message.author.username}
+          ► ` + parole);
+  const embed = new Discord.RichEmbed()
+  .setAuthor("📝 Logs - Speak", `${client.user.avatarURL}`)
+  .setColor("0xfa05fa")
+  .addField(`**Auteur :**`, `${message.author}`)
+  .addField("**Parole utilisée :**", parole)
+  client.channels.get("442467811017883658").send({embed})
 }});
 
 /* =Connexion Système= */

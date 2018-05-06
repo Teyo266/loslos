@@ -22,14 +22,19 @@
 if (command === "ban") {
     console.log("ban")
 if(!message.member.hasPermission("BAN_MEMBERS"))
-return message.reply("Tu ne peux pas ban !")
+return message.reply("T'es ouf toi pour essayer de ban ?")
 let member = message.mentions.members.first();
 if(!member)
-return message.reply("Please mention someone !");
-member.send(`You have been banned from ${message.guild.name}`);
+return message.reply("Moi j'veux bien ban mais qui ?");
+member.send(`Vous avez été banni de ${message.guild.name}`);
 member.ban()
-}
- });
+const embed = new Discord.RichEmbed()
+.setAuthor("📝 Logs - Ban", `${client.user.avatarURL}`)
+.setColor("0xfa05fa")
+.addField(`**Auteur :**`, `${message.author}`)
+.addField("**Utilisateur Banni  :**", `${member.user}`)
+client.channels.get("441725938582159360").send({embed})
+}});
 
 /* Connexion */
 client.login(config.token)

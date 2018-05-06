@@ -22,11 +22,11 @@
 if (command === "kick") {
     console.log("Kick")
 if(!message.member.hasPermission("KICK_MEMBERS"))
-return message.reply("You can't Kick !")
+return message.reply("Ne t'imagines pas trop de choses tu peux pas kick mdr")
 let member = message.mentions.members.first();
 if(!member)
-return message.reply("Please mention someone !");
-member.send(`You have been Kicked from ${message.guild.name}`)
+return message.reply("Heuu ... Je dois expulser qui là ? ");
+member.send(`Vous avez été" kick de  ${message.guild.name}`)
 member.kick
 }
  });
