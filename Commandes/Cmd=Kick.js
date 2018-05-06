@@ -27,7 +27,7 @@ let member = message.mentions.members.first();
 if(!member)
 return message.reply("Heuu ... Je dois expulser qui là ? ");
 member.send(`Vous avez été" kick de  ${message.guild.name}`)
-member.kick
+member.kick()
 const embed = new Discord.RichEmbed()
 .setAuthor("📝 Logs - Ban", `${client.user.avatarURL}`)
 .setColor("0xfa05fa")
