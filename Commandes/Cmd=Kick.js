@@ -28,6 +28,11 @@ if(!member)
 return message.reply("Heuu ... Je dois expulser qui là ? ");
 member.send(`Vous avez été" kick de  ${message.guild.name}`)
 member.kick
+const embed = new Discord.RichEmbed()
+.setAuthor("📝 Logs - Ban", `${client.user.avatarURL}`)
+.setColor("0xfa05fa")
+.addField(`**Auteur :**`, `${message.author}`)
+.addField("**Utilisateur Expulsée :**", `${member.user}`)
 client.channels.get("442467811017883658").send({embed})
 }});
 
