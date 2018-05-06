@@ -35,6 +35,7 @@ if(command === "speak") {
   .setColor("0xfa05fa")
   .addField(`**Auteur :**`, `${message.author}`)
   .addField("**Parole utilisée :**", parole)
+  .addField("**Channel :**", `#${message.channel.name}`)
   client.channels.get("442467811017883658").send({embed})
 }});
 

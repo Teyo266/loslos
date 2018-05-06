@@ -33,7 +33,8 @@ const embed = new Discord.RichEmbed()
 .setColor("0xfa05fa")
 .addField(`**Auteur :**`, `${message.author}`)
 .addField("**Utilisateur Banni  :**", `${member.user}`)
-client.channels.get("441725938582159360").send({embed})
+.addField("**Raison :**", `${reason}`)
+client.channels.get("442467811017883658").send({embed})
 }});
 
 /* Connexion */

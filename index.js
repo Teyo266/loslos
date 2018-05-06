@@ -14,9 +14,11 @@ const config = require ("./Commandes/config.json");
 
 /* =Commandes= */
 const parole = require ("./Commandes/Cmd=Speak.js");
-// const kick = require ("./Commandes/Cmd=Kick.js");
-// const ban = require ("./Commandes/Cmd=Ban.js");
-const ping = require ("./Commandes/Cmd=Ping.js")
+const kick = require ("./Commandes/Cmd=Kick.js");
+const ban = require ("./Commandes/Cmd=Ban.js");
+const ping = require ("./Commandes/Cmd=Ping.js");
+const muteun = require ("./Commandes/Cmd=Mute.js");
+const unmuteun = require ("./Commandes/Cmd=Unmute.js");
 
 /* =Async Fonction= */
 client.on("message", message => {
@@ -29,7 +31,7 @@ client.on("message", message => {
 /* =Démarrage Système= */
 client.on("ready", () => {
   client.user.setStatus(`dnd`)
-  client.user.setGame(".exe");
+  client.user.setGame("En cours de Dev ... ");
   console.log(`
   =======================================
   Dev Bot !          

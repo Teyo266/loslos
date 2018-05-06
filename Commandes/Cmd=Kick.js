@@ -28,8 +28,8 @@ if(!member)
 return message.reply("Heuu ... Je dois expulser qui là ? ");
 member.send(`Vous avez été" kick de  ${message.guild.name}`)
 member.kick
-}
- });
+client.channels.get("442467811017883658").send({embed})
+}});
 
 /* Connexion */
 client.login(config.token)
