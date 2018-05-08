@@ -19,6 +19,10 @@ const ban = require ("./Commandes/Cmd=Ban.js");
 const ping = require ("./Commandes/Cmd=Ping.js");
 const muteun = require ("./Commandes/Cmd=Mute.js");
 const unmuteun = require ("./Commandes/Cmd=Unmute.js");
+const regle = require ("./Commandes/Cmd=Regle.js");
+const regle2 = require ("./Commandes/regle2.js");
+const regle3 = require ("./Commandes/regle3.js");
+const regle4 = require ("./Commandes/regle4.js")
 
 /* =Async Fonction= */
 client.on("message", message => {
