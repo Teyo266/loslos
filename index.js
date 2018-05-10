@@ -13,7 +13,7 @@ const client = new Discord.Client();
 const config = require ("./Commandes/config.json");
 
 /* =Commandes= */
-const parole = require ("./Commandes/Cmd=Speak.js");
+// const parole = require ("./Commandes/Cmd=Speak.js");
 const kick = require ("./Commandes/Cmd=Kick.js");
 const ban = require ("./Commandes/Cmd=Ban.js");
 const ping = require ("./Commandes/Cmd=Ping.js");
