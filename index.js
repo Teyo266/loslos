@@ -55,7 +55,7 @@ client.on("guildMemberAdd", member => {
 .setColor(0x00ff00)
 .setDescription(member.user + " vient de nous rejoindre ! 💻")
 .setTimestamp();
-client.channels.get("442403150507409409").send({embed});
+client.channels.get("443543180579700745").send({embed});
 });
 
 /* =Ancien Joueur= */
@@ -67,7 +67,7 @@ const embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .setDescription(member.user + " vient de nous quitter ! 💻")
 .setTimestamp();
-client.channels.get("442403150507409409").send({embed});
+client.channels.get("443543180579700745").send({embed});
 });
 
 
